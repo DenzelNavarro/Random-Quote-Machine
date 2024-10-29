@@ -1,6 +1,6 @@
 import { useState } from "react";
 import quotes from "./assets/quotes.json";
-import { FaTwitter, FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
+import { FaTwitter, FaQuoteLeft, FaQuoteRight, FaYoutube } from "react-icons/fa";
 import "./App.css";
 
 interface Quote {
@@ -44,7 +44,7 @@ function App() {
         </div>
         <div className="buttons">
           <a
-            href={`https://twitter.com/intent/tweet{quote.quote}`}
+            href={`https://www.youtube.com/watch?v=dQw4w9WgXcQ{quote.quote}`}
             id="tweet-quote"
             style={{
               backgroundColor: randomColor,
@@ -52,7 +52,7 @@ function App() {
               transition,
             }}
           >
-            <FaTwitter color="white" />
+            <FaYoutube color="white" />
           </a>
           <button
             id="new-quote"
